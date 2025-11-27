@@ -21,7 +21,7 @@ const Login = () => {
   };
   const handleLogin = () => {
     axios
-      .post("http://localhost:3001/api/login", login)
+      .post("backend-app-knhq.onrender.com/api/login", login)
       .then((res) => {
         alert(res.data.message);
         saveToLocal(res.data.data);
