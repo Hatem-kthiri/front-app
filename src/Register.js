@@ -16,7 +16,7 @@ const Register = () => {
   }, []);
   const handleRegisterUser = () => {
     axios
-      .post("backend-app-knhq.onrender.com/api/register", newUser)
+      .post("https://backend-app-knhq.onrender.com/api/register", newUser)
       .then((res) => {
         alert(res.data.message);
         navigate("/login");
